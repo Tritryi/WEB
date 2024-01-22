@@ -1,0 +1,130 @@
+/* Partie Main*/
+
+/* Style Page NosStages */
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    font-variant: small-caps;
+  }
+  
+  /*Style de première section*/
+  #pres{
+    background-color: var(--sixth-color);
+    padding: 2em 2em 2em 2em;
+    font-size: 20px;
+    margin: 20px;
+  }
+  #pres>div{
+    display: flex;
+  }
+  #pres>div>img{
+    width: 700px;
+    height: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  /*Style de la deuxième section*/
+  #metier{
+    display: flex;
+    gap: 250px;
+  }
+  
+  .met{
+    width: 800px;
+    margin: 25px;
+  }
+  .met>p{
+    text-align: center;
+  }
+  
+  .fig{
+    display: flex;
+  }
+  .obj>img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 600px;
+  }
+  .obj{
+    display: none;
+  }
+  figure:hover{
+    transform: scale(1.01);
+  }
+  
+  .met ul {
+    list-style: none;
+  }
+  
+  .met:nth-child(2){
+    text-align: center;
+    background-color: var(--fifth-color);
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .met:nth-child(2) .obj img{
+    display: block;
+    margin: 20px;
+  }
+  
+  /*Style de la troisième section*/
+  #form{
+    background-color: var(--sixth-color);
+    padding-left: 1em;
+    padding-top: 2em;
+    margin-bottom: 20px;
+  }
+  .infos{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  select{
+    display: flex;
+    flex-direction: column;
+  }
+  .form{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: white;
+  }
+  input{
+    border: solid 1px black;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+  }
+  input:focus{
+    outline: none  ;
+  }
+  input:hover{
+    transform: scale(1.05);
+  }
+  select:hover{
+    transform: scale(1.05);
+  }
+  .motiv{
+    border: none;
+  }
+  form{
+    padding-top: 5px;    
+  }
+  .envoie{
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: solid 1px var(--fifth-color);
+    border-radius: 10px;
+    background-color: #0594d0;
+  }
+  .envoie:hover{
+    filter: brightness(1.4);
+  }
+  .text{
+    color: white;
+  }
+  a[href="politique.html"]{
+    color: #007198;
+  }
+    
