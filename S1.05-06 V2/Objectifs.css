@@ -1,0 +1,69 @@
+/* Partie Main */
+.ti {
+    padding-bottom: 1em;
+}
+
+main li {
+    text-decoration: underline;
+    list-style-type: square;
+}
+
+#strat {
+    display: flex;
+}
+
+main section {
+    margin-bottom: 1em;
+}
+
+main section div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ill {
+    width: 800px;
+    padding-top: 6em;
+}
+
+.illust {
+    width: 8em;
+}
+
+#miss {
+    display: flex;
+}
+
+figure {
+    display: flex;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+}
+
+main figcaption {
+    text-decoration: underline;
+}
+
+#eco {
+    display: flex;
+}
+
+#transeco {
+    padding: 1em 1em 1em 1em;
+    width: 1600px;
+    height: auto;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#text p {
+    padding: 10px 10px 10px 10px;
+}

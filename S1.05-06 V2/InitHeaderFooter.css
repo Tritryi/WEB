@@ -25,6 +25,7 @@
 }
 
 body {
+  width: 100%;
   background-color: var(--background-primary-color);
   color: var(--secondary-color);
   padding: 2em;
@@ -197,7 +198,7 @@ a {
 }
 
 /* Partie Langue */
-/* Notre souhait est de ne pas intégrer une partie JavaScript, ainsi cette sélection est uniquement décorative*/
+/* La sélection est uniquement à but décorative mais pourrait être intégré */
 .selection-langue {
   cursor: pointer;
   display: flex;
@@ -285,8 +286,11 @@ a {
 }
 
 /* Partie Main */
-main h1,
-h2 {
+main {
+  font-size: 20px;
+}
+
+main h1, h2 {
   margin-top: 1em;
   margin-bottom: 1.5em;
   font-variant: small-caps;
@@ -451,4 +455,16 @@ main hr {
   top: 10%;
   transform: translateX(20px);
   transition: .3s;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media(max-width: 920px) {
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
 }

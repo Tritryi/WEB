@@ -82,6 +82,7 @@ input{
   border-top: none;
   border-left: none;
   border-right:none ;
+  padding: 3px;
 }
 input:focus{
   outline: none  ;
@@ -89,6 +90,11 @@ input:focus{
 input:hover{
   transform: scale(1.05);
 }
+
+select {
+  padding: 3px;
+}
+
 select:hover{
   transform: scale(1.05);
 }

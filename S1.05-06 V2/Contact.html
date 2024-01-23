@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="InitHeaderFooter.css">
+    <link rel="stylesheet" href="Contact.css">
 </head>
 
 <body class="hero">
@@ -58,14 +59,55 @@
                 </ul>
             </div>
             <div class="option">
-                <img src="./Images/moon.png" alt="Dark Mode / Light Mode" title="Dark Mode / Light Mode" id="icon">
+                <img src="Images/moon.png" alt="Dark Mode / Light Mode" title="Dark Mode / Light Mode" id="icon">
             </div>
         </nav>
         <hr>
     </header>
 
     <main>
-
+        <section id="nano">
+            <div>
+                <h1 class="ht">Nous répondons à vos questions !</h1>
+                <h1 class="ht">Suivez l'actualité de SCC sur tous les réseaux </h1>
+            </div>
+            <img src="Images/fond_test.png" alt="">
+        </section>
+        <section>
+            <h2>Besoin d'une précision ? Nous vous répondons.</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="mail" class="form">
+                        Votre e-mail :
+                        <input type="email" name="mail" id="mail" required>
+                    </label>
+                </div>
+                <div>
+                    Précisez votre problème :*
+                    <label for="explication">
+                        <textarea name="explication" id="explication" cols="30" rows="8"></textarea>
+                    </label>
+                </div>
+            </form>
+            <br>
+            <p>*Un employé du support vous répondra au plus vite !</p>
+        </section>
+        <section>
+            <h1>Nos contacts</h1>
+            <p>Nous contacter par e-mail : dpo@fr.scc.com </p>
+            <p>Appelez le support (7j/7) : +33 (0) 1 41 91 33 33</p>
+        </section>
+        <section id="réseau">
+            <h1 class="tm">Nos réseaux sociaux</h1>
+            <ul class="icon">
+                <li><a href="https://www.tiktok.com/@scc_france" target="_blank"><img class="reseau" src="Images/tiktok.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/scc_france/" target="_blank"><img class="reseau" src="Images/insta.png"></a></li>
+                <li><a href="https://www.youtube.com/@SCCFrance-SCCTV" target="_blank"><img class="reseau" src="Images/youtube.png" alt=""></a></li>
+                <li><a href="https://twitter.com/scc_info" target="_blank"><img class="reseau" src="Images/x.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/SCCINFO/" target="_blank"><img class="reseau" src="Images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/company/scc-france/?originalSubdomain=fr" target="_blank"><img class="reseau" src="Images/linkdin.png" alt=""></a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
@@ -117,7 +159,6 @@
         </ul>
     </div>
     <nav class="navbas">
-        <span>Copyright © 2024. Tous droits réservés.</span>
         <ul>
             <li><a href="MentionsLégales.html">Mentions Légales</a></li>
             <li><a href="PolitiqueDeConfidentialite.html">Politique de confidentialité</a></li>
@@ -125,8 +166,11 @@
             <li><a href="CharteDeGestionDesCookies.html">Charte de gestion des cookies</a></li>
             <i class="fa-solid fa-cookie"></i>
         </ul>
-        <span>Réalisé par Fontanière Tristan, Barnouin Clément et Mitov Tsveteline.</span>
     </nav>
+    <div>
+        <span>Copyright © 2024. Tous droits réservés.</span>
+        <span>Réalisé par Fontanière Tristan, Barnouin Clément et Mitov Tsveteline.</span>
+    </div>
     </footer>
 
 <!-- Dark / Light Mode / Stage -->
