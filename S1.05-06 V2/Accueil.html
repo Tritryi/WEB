@@ -76,7 +76,7 @@
                 <h2>Qui sommes nous ?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <hr>
+            <hr class="vert">
             <div>
                 <h2>Où nous trouver ?</h2>
                 <img src="Images/fond_test.png" alt="">
@@ -85,38 +85,71 @@
         <hr>
         <section class="services">
             <h2>Nos Services</h2>
-            <div>
-                <div>
-                    <img src="Images/fond_test.png" alt="">
-                    <h3>Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                            <div class="slide-content">
+                               <h2>Service 1</h2>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_2">
+                            <div class="slide-content">
+                               <h2>Service 2</h2>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_3">
+                            <div class="slide-content">
+                               <h2>Service 3</h2>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_4">
+                            <div class="slide-content">
+                               <h2>Service 4</h2>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
                 </div>
-                <div>
-                    <img src="Images/fond_test.png" alt="">
-                    <h3>Service 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
                 </div>
-                <div>
-                    <img src="Images/fond_test.png" alt="">
-                    <h3>Service 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
                 </div>
-                <div>
-                    <img src="Images/fond_test.png" alt="">
-                    <h3>Service 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+             </div>
         </section>
         <hr>
         <section class="objectifs">
             <h2>Objectifs</h2>
-            <i class="fa-solid fa-house"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <i class="fa-solid fa-house"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <i class="fa-solid fa-house"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </section>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+           </section>
         <hr>
         <section class="partenaires">
             <h2>Nos Partenaires</h2>
@@ -248,12 +281,39 @@
             </div>
         </section>
         <hr>
+        <section class="filiales">
+            <h2>Nos filiales</h2>
+            <div>
+                <h3>Filiale 1</h3>
+                <img src="Images/fond_test.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+            <div>
+                <h3>Filiale 2</h3>
+                <img src="Images/fond_test.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+            <div>
+                <h3>Filiale 3</h3>
+                <img src="Images/fond_test.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+            <div>
+                <h3>Filiale 4</h3>
+                <img src="Images/fond_test.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+        </section>
+        <hr>
         <section class="contact">
             <h2>Nous Contacter</h2>
-            <i class="fa-solid fa-phone"></i><span>Une question ? N'hésitez plus et contactez nous</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div>
+                <a href="Contact.html"><i class="fa-solid fa-phone"></i><span>Une question ? N'hésitez plus et contactez nous</span></a>
+            </div>
             <h2>Demande de Stage</h2>
-            <i class="fa-solid fa-envelope"></i><span>Faites votre demande dès aujourd'hui</span>
+            <div>
+                <a href="NosStages.html"><i class="fa-solid fa-envelope"></i><span>Faites votre demande dès aujourd'hui</span></a>
+            </div>
         </section>
     </main>
 

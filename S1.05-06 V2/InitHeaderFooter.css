@@ -28,7 +28,7 @@ body {
   width: 100%;
   background-color: var(--background-primary-color);
   color: var(--secondary-color);
-  padding: 2em;
+  padding: 2em; /* Choix */
 }
 
 .hero {
