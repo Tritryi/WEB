@@ -23,6 +23,12 @@
 }
 }
 
+@media only screen and (max-width: 450px) {
+  #pres img {
+    width: 75%;
+  }
+  }
+
 /* Partie main */
 /* Première section */
 main h2 {

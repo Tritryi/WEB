@@ -25,6 +25,13 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    #pres img,
+    #prdt img {
+      width: 75%;
+    }
+}
+
 /* Partie Main */
 main section {
     padding-bottom: 1em;
