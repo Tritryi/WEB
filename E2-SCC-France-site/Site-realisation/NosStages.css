@@ -1,0 +1,175 @@
+/* Responsive Design */
+@media only screen and (max-width: 700px) {
+  .fig img {
+    min-width: 180px;
+    width: 100%;
+  }
+
+  .met div {
+    min-width: 225px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #pres {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+#pres img {
+  min-width: 350px;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  #pres img {
+    width: 75%;
+  }
+  }
+
+/* Partie main */
+/* Première section */
+main h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+#tstage{
+  font-size: 20px;
+}
+#pres p{
+  line-height: 1em;
+}
+
+#pres {
+  display: flex;
+  font-size: 25px;
+}
+
+#imgpre {
+  width: 800px;
+  border: solid 3px black;
+}
+
+/* Deuxième section */
+
+.obj {
+  display: none;
+}
+
+.obj>img {
+  width: 90%;
+  border: solid 1px black;
+}
+
+#metier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.fig {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fig img{
+  width: 300px;
+  height: 200px;
+  border: solid 1px black;
+}
+
+
+.met {
+  margin-right: 8em;
+}
+
+li {
+  list-style-type: none;
+}
+
+main ul {
+  padding-bottom: 2em;
+}
+
+.met:nth-child(2) {
+  background-color: #1d9bf0;
+  padding: 4em 4em 4em 4em;
+  width: 600px;
+  text-align: center;
+}
+
+/* Troisième section */
+#form {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding: 1em 1em 1em 1em;
+  background-color: #a3a3a3;
+}
+
+.text {
+  padding-bottom: 1em;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+select {
+  display: flex;
+  flex-direction: column;
+}
+
+main div {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+input {
+  border: solid 1px black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+select {
+  padding: 3px;
+}
+
+select:hover {
+  transform: scale(1.05);
+}
+
+.motiv {
+  border: none;
+}
+
+form {
+  padding-top: 5px;
+}
+
+.envoie {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: #007198;
+}
+
+.envoie:hover {
+  filter: brightness(1.4);
+}

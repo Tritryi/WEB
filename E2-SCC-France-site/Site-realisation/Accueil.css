@@ -1,0 +1,369 @@
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+    .presentation {
+        flex-wrap: wrap;
+    }
+
+    .vert {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .titre h1,
+    .titre h2 {
+        font-size: 40px;
+    }
+
+    .presentation img {
+        width: 100%;
+    }
+
+    .services p {
+        font-size: 10px;
+    }
+
+    .services h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .titre h1,
+    .titre h2 {
+        font-size: 30px;
+    }
+
+    .services h2 {
+        font-size: 15px;
+    }
+}
+
+/* Partie Main*/
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 50px;
+    letter-spacing: 0.25em;
+    height: 1000px;
+    color: #fffafa;
+    background-image: url(Images/accueil_bg.webp);
+}
+
+.presentation {
+    display: flex;
+}
+
+.presentation h1 {
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.presentation h3 {
+    padding-top: 1em;
+}
+
+.vert {
+    border: none;
+    border-left: 3px solid;
+    width: 3px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+/* Partie Services */
+.services,
+.objectifs,
+.contact {
+    margin-bottom: 1em;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#slides .slide_1 {
+    background: #00171F;
+}
+
+#slides .slide_2 {
+    background: #003459;
+}
+
+#slides .slide_3 {
+    background: #007EA7;
+}
+
+#slides .slide_4 {
+    background: #00A8E8;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked~#controls label:nth-last-child(2),
+#slide2:checked~#controls label:nth-last-child(3),
+#slide3:checked~#controls label:nth-last-child(4),
+#slide4:checked~#controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+
+    #slide1:checked~#controls label:nth-child(2),
+    #slide2:checked~#controls label:nth-child(3),
+    #slide3:checked~#controls label:nth-child(4),
+    #slide4:checked~#controls label:nth-child(1),
+    #slide1:checked~#controls label:nth-last-child(2),
+    #slide2:checked~#controls label:nth-last-child(3),
+    #slide3:checked~#controls label:nth-last-child(4),
+    #slide4:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+/* Partie Clients */
+.clients {
+    padding: 2rem;
+    text-align: center;
+}
+
+.clients p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.clients h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.clients img {
+    margin: 1em;
+}
+
+.slider div {
+    margin: 0.5em;
+    border: solid 1px;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: 0rem;
+    padding-bottom: 2.5rem;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.25rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border: solid 3px black;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* Filiales */
+.filiales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filiales div {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.filiales img {
+    width: 300px;
+    height: 168px;
+}
+
+/* Partie Objectifs et Contact */
+.objectifs div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.objectifs div i {
+    margin-right: 10px;
+}
+
+.contact h2 {
+    text-align: left;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.contact div i {
+    margin-right: 10px;
+}
+
+.contact a:hover {
+    filter: brightness(1.5);
+    transform: scale(1.01);
+    transition: 1s;
+}
