@@ -1,0 +1,29 @@
+/* Partie Main*/
+/* Style MentionsLégales / PolitiqueDeConfidentialité / ProtectionDesDonnées / CharteDeGestionDesCookies */
+/* Toute cette partie est uniquement faite pour rendre le site plus réaliste et ainsi est copié / collé */
+/* Suite à l'autorisation de cette action de Madame Dugdale par confirmation mail */
+.bi-legal_content {
+  margin: 20px;
+}
+
+.bi-legal_content h1 {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.bi_articleType-content {
+  margin: 20px;
+}
+
+.bi_articleType-content h4 {
+  font-variant: small-caps;
+}
+
+.bi_articleType_content-section p strong {
+  font-variant: small-caps;
+}
+
+.bi_articleType_content-section p {
+  font-variant: normal;
+  margin: 20px;
+}

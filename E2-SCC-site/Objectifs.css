@@ -1,0 +1,82 @@
+/* Responsive Design */
+@media only screen and (max-width: 1400px) {
+    #strat {
+      flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+  #strat img {
+    width: 100%;
+    min-width: 350px;
+  }
+}
+
+/* Partie Main */
+.ti{
+    margin-top: 1em;
+}
+
+main li {
+    text-decoration: underline;
+    list-style-type: square;
+}
+
+#strat {
+    display: flex;
+}
+
+#ill {
+    width: 800px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: solid 3px black;
+}
+#nosmissions{
+    background-color: #265073;
+    padding: 1em 1em 1em 1em;
+}
+
+
+main section div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.illust {
+    width: 8em;
+}
+
+#figures {
+    display: flex;
+    justify-content: space-between;
+}
+
+main figure {
+    flex: 1;
+    margin: 0;
+}
+
+.capp {
+    display: flex;
+    flex-direction: column;
+}
+
+main figcaption {
+    text-decoration: underline;
+}
+
+#eco {
+    display: flex;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#text p {
+    padding: 10px 10px 10px 10px;
+}

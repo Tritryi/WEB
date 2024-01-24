@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCC France - SCC</title>
+    <link rel="icon" href="./Images/SCC.webp" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="InitHeaderFooter.css">
+    <link rel="stylesheet" href="NosStages.css">
+</head>
+
+<body class="hero">
+
+    <header>
+        <nav class="navhaut">
+            <a href="Accueil.html"><img src="Images/Logo_SCC_France.webp" alt="Logo SCC France" title="SCC France"
+                    class="logo"></img></a>
+            <ul class='nav-bar'>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="QuiSommesNous.html">Qui Sommes Nous ?</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Objectifs.html">Objectifs</a></li>
+                    <li><a href="PartenairesFiliales.html">Partenaires / Filiales</a></li>
+                    <li><a class="actif" href="NosStages.html">Nos Stages</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+            <div class="menu-langue">
+                <div class="selection-langue">
+                    Français
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="an">Anglais</a>
+                    </li>
+                    <li>
+                        <a href="#" class="al">Allemand</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ru">Russe</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ch">Chinois</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ind">Indien</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ar">Arabe</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="option">
+                <img src="Images/moon.webp" alt="Dark Mode / Light Mode" title="Dark Mode / Light Mode" id="icon">
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Stage d'observation niveau 3eme</h2>
+            <div id="pres">
+                <div>
+                    <h2 id="tstage">SCC France ouvre ses portes aux élèves de l'enseignement secondaire !</h2>
+                    <p>Depuis peu, SCC France entretient des relations avec l'Education Nationale Française, donnant ainsi accès à des stages d'observation pour les élèves en classe de 3ème. Notre entreprise s'engage à vous faire découvrir un véritable cadre de travail au sein d'une ESN
+                        Lors de nos stage, vous pourrez choisir parmis quatre corps de métiers différents, selon ce qui vous attire le plus ! Vous pourrez découvrir : les différents missions,
+                        les attentes, les compétences, les journées types de notre personnel qui vous accompagnera tout au long du stage. Vous serez confrontés à toutes les étapes d'une mission chez SCC, de la demande du client
+                        jusqu'au rendu du projet, en passant évidemment par la partie technique. Tant que vous êtes motivés, SCC vous accueillera sans hésitation ! Vous pouvez postulez dès maintenant ci-dessous. 
+                    </p>
+                </div>
+                <div>
+                    <img id="imgpre" src="Images/restcontact.webp" alt="Image d'un utilisateur effectuant une demande de stage" title="Etudiant de Troisième">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="metier">
+            <div class="met">
+                <h2>Les corps de métiers possibles</h2>
+                <div class="fig">
+                    <figure onclick="afficherDiv('conseilinfo')">
+                        <figcaption>Conseil informatique</figcaption>
+                        <img src="Images/conseil_info.webp" alt="Image d'un brainstorming" title="Brainstorming d'une équipe">
+                    </figure>
+                    <figure onclick="afficherDiv('commerce')">
+                        <figcaption>Commerce</figcaption>
+                        <img src="Images/commerce.webp" alt="Image d'une discussion commerciale" title="Discussion Commerciale">
+                    </figure>
+                </div>
+                <div class="fig">
+                    <figure onclick="afficherDiv('infrastructure')">
+                        <figcaption>Optimisation d'infrastructures</figcaption>
+                        <img src="Images/opti_infra.webp" alt="Image d'un entretient de serveur" title="Entretient d'un Serveur">
+                    </figure>
+                    <figure onclick="afficherDiv('securite')">
+                        <figcaption>Sécurisation de systèmes</figcaption>
+                        <img src="Images/sécur.webp" alt="Image de la protection d'un ordinateur" title="Protection des données">
+                    </figure>
+                </div>
+            </div>
+            <div class="met" id="objectif">
+                <h2>Objectif du stage</h2>
+                <p><i>Sélectionner le corps de métier qui vous intéresse</i></p>
+                <br>
+                <div class="obj" id="conseilinfo">
+                    <ul>
+                        <li>Comprendre le métier de conseiller</li>
+                        <li>Comprendre l'étude des besoins clients</li>
+                        <li>Comprendre comment s'adapter aux nouvelles technologies</li>
+                        <li>Comprendre comment répondre de manière écologique et optimale</li>
+                    </ul>
+                    <img src="Images/obj_conseil.webp" alt="Image d'une discussion sur un banc" title="Conseil Informatique">
+                </div>
+                <div class="obj" id="commerce">
+                    <ul>
+                        <li>Comprendre le métier de la fonction commerce</li>
+                        <li>Comprendre comment réaliser des contrats clients</li>
+                        <li>Comprendre comment organiser des solutions financièrement viables</li>
+                    </ul>
+                    <img src="Images/obj_commerce.webp" alt="Image d'un ordinateur" title="Commerce">
+                </div>
+                <div class="obj" id="infrastructure">
+                    <ul>
+                        <li>Comprendre en quoi consiste la gestion d'infrastructures</li>
+                        <li>Comprendre comment déployer une infrastructure fonctionnelle et optimisée</li>
+                        <li>Comprendre comment sélectionner les infrastructures adaptées au client</li>
+                    </ul>
+                    <img src="Images/obj_infra.webp" alt="Image d'un entretient d'une baie de serveur" title="Optimisation d'Infrastructure">
+                </div>
+                <div class="obj" id="securite">
+                    <ul>
+                        <li>Comprendre le concept de sécurité informatique</li>
+                        <li>Comprendre comment un technicien analyse la sécurité nécessaire au client</li>
+                        <li>Connaître les différentes possibilités de sécurisation</li>
+                        <li>Comprendre comment asurer une fiabilité et sécurité des systèmes</li>
+                    </ul>
+                    <img src="Images/obj_cyber.webp" alt="Image de plusieurs ordinateurs" title="Sécurisation de systèmes">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="form">
+            <h2 class="text">Demander votre stage !</h2>
+            <p class="text">Vous pouvez demander votre stage dès maintenant ! Remplissez le formulaire ci-dessous, et nous vous recontacterons</p>
+            <section>
+            <form action="formulaire.php" method="post" >
+                <div class="form">
+                    <label for="nom" class="infos">
+                        Votre nom :
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="prenom" class="infos">
+                        Votre prénom :
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="age" class="infos">
+                        Votre âge :
+                        <input type="date" id="age" name="age" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="mail" class="infos">
+                        Votre e-mail :
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="adresse" class="infos">
+                        Votre adresse
+                        <input type="text" name="adresse" id="adresse" placeholder="Adresse postale" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="cp" class="infos">
+                        Code postal 
+                        <input type="text" name="cp" id="adresse" placeholder="Code postal" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="ecole" class="infos">
+                        Votre établissement scolaire
+                        <input type="text" name="ecole" id="ecole" placeholder="Nom de l'établissement" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="metiers"></label>
+                    Secteur de métier recherché :
+                    <select name="metiers" id="metiers">
+                        <option hidden value="">Sélectionner un secteur</option>
+                        <option value="conseil info">Conseil Informatique</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="optimisation">Optimisation d'infrastructures</option>
+                        <option value="protection">Sécurisation de systèmes</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="etude" class="infos">
+                        Indiquez les études <br> que vous envisagez :
+                        <input type="text" name="etude" id="etude" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="motiv" class="infos">
+                        Joindre votre lettre de motivation (en format pdf) :
+                        <input class="motiv" type="file" name="motiv" id="motiv" accept=".pdf" required>
+                    </label>
+                </div>
+                <div class="form">
+                    <label for="accept">
+                        <input type="checkbox" name="accept" id="accept" required>
+                        Je reconnais être élève en classe de 3ème et accepter la <a href="Images/politique.html">politique</a> de l'entreprise.
+                    </label>
+                </div>
+    
+                <p>
+                    <input class="envoie" type="submit" value="Envoyer">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <div id="main-container">
+            <ul class="social-container">
+                <li class="item">
+                    <a href="https://www.youtube.com/@SCCFrance-SCCTV" target="_blank" title="Youtube">
+                        <span class="fab fa-youtube"></span>
+                        <span class="bg youtube-bg"></span>
+                        <span>Youtube</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.facebook.com/SCCINFO/" target="_blank" title="Facebook">
+                        <span class="fab fa-facebook"></span>
+                        <span class="bg face-bg"></span>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.instagram.com/scc_france/" target="_blank" title="Instagram">
+                        <span class="fab fa-instagram"></span>
+                        <span class="bg insta-bg"></span>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.linkedin.com/company/scc-france/?originalSubdomain=fr" target="_blank"
+                        title="Linkedin">
+                        <span class="fab fa-linkedin"></span>
+                        <span class="bg link-bg"></span>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://twitter.com/scc_info" target="_blank" title="Twitter">
+                        <span class="fab fa-twitter"></span>
+                        <span class="bg twit-bg"></span>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.tiktok.com/@scc_france" target="_blank" title="TikTok">
+                        <span class="fab fa-tiktok"></span>
+                        <span class="bg tiktok-bg"></span>
+                        <span>TikTok</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbas">
+            <ul>
+                <li><a href="MentionsLégales.html">Mentions Légales</a></li>
+                <li><a href="PolitiqueDeConfidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="ProtectionDesDonnees.html">Protection des données</a></li>
+                <li><a href="CharteDeGestionDesCookies.html">Charte de gestion des cookies</a></li>
+                <i class="fa-solid fa-cookie"></i>
+            </ul>
+        </nav>
+        <div>
+            <span>Copyright © 2024. Tous droits réservés.</span>
+            <span>Réalisé par Fontanière Tristan, Barnouin Clément et Mitov Tsveteline.</span>
+        </div>
+    </footer>
+
+    <!-- Dark / Light Mode / Stage -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
