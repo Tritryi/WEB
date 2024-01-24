@@ -17,6 +17,11 @@
     main section article {
         flex-wrap: wrap;
     }
+
+    #organi img {
+        width: 100%;
+        min-width: 350px;
+    }
 }
 
 /* Partie Main */
@@ -27,6 +32,11 @@ main {
 #pres {
     display: flex;
     justify-content: space-between;
+}
+
+#pres img,
+#obj img {
+    max-width: 30em;
 }
 
 .scc {
@@ -73,6 +83,10 @@ main ul {
     justify-content: center;
 }
 
+#organi img {
+    width: 40em;
+}
+
 article {
     display: flex;
     justify-content: space-around;
@@ -97,6 +111,7 @@ article {
 
 .act {
     width: 30em;
+    height: 18em;
 }
 
 #persocle {
