@@ -1,3 +1,17 @@
+/* Responsive Design */
+@media only screen and (max-width: 1400px) {
+    #strat {
+      flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+  #strat img {
+    width: 100%;
+    min-width: 350px;
+  }
+}
+
 /* Partie Main */
 .ti {
     padding-bottom: 1em;
@@ -12,6 +26,13 @@ main li {
     display: flex;
 }
 
+#ill {
+    width: 800px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+
 main section {
     margin-bottom: 1em;
 }
@@ -22,24 +43,21 @@ main section div:nth-child(2) {
     justify-content: center;
 }
 
-#ill {
-    width: 800px;
-    padding-top: 6em;
-}
-
 .illust {
     width: 8em;
 }
 
-#miss {
+#figures {
     display: flex;
+    justify-content: space-between;
 }
 
-figure {
-    display: flex;
+main figure {
+    flex: 1;
+    margin: 0;
 }
 
-.exp {
+.capp {
     display: flex;
     flex-direction: column;
 }
@@ -50,12 +68,6 @@ main figcaption {
 
 #eco {
     display: flex;
-}
-
-#transeco {
-    padding: 1em 1em 1em 1em;
-    width: 1600px;
-    height: auto;
 }
 
 #text {

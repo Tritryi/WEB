@@ -1,3 +1,46 @@
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+    .presentation {
+        flex-wrap: wrap;
+    }
+
+    .vert {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .titre h1,
+    .titre h2 {
+        font-size: 40px;
+    }
+
+    .presentation img {
+        width: 100%;
+    }
+
+    .services p {
+        font-size: 10px;
+    }
+
+    .services h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .titre h1,
+    .titre h2 {
+        font-size: 30px;
+    }
+
+    .services h2 {
+        font-size: 15px;
+    }
+}
+
 /* Partie Main*/
 .titre {
     display: flex;
@@ -16,10 +59,22 @@
 .presentation {
     display: flex;
 }
-.vert { 
+
+.presentation h1 {
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.presentation h3 {
+    padding-top: 1em;
+}
+
+.vert {
     border: none;
-    border-left: 3px solid ;
-    width: 3px;       
+    border-left: 3px solid;
+    width: 3px;
 }
 
 main h2 {
@@ -27,7 +82,9 @@ main h2 {
 }
 
 /* Partie Services */
-.services, .objectifs, .contact {
+.services,
+.objectifs,
+.contact {
     margin-bottom: 1em;
 }
 
@@ -188,23 +245,29 @@ main h2 {
     }
 }
 
-/* Partie Partenaires */
-.partenaires {
+/* Partie Clients */
+.clients {
     padding: 2rem;
     text-align: center;
 }
 
-.partenaires h3 {
+.clients p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.clients h3 {
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.partenaires img {
+.clients img {
     margin: 1em;
 }
 
 .slider div {
     margin: 0.5em;
-    border: solid 1px ;
+    border: solid 1px;
 }
 
 .slider-wrapper {
@@ -226,6 +289,8 @@ main h2 {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    width: 300px;
+    height: 300px;
 }
 
 .slider-nav {
@@ -253,28 +318,22 @@ main h2 {
 
 /* Filiales */
 .filiales {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 1em; 
-}
-
-.filiales h2 {
-    grid-column: span 2; 
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .filiales div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .filiales img {
-    max-width: 100%; 
+    width: 300px;
+    height: 168px;
 }
 
 /* Partie Objectifs et Contact */
@@ -284,8 +343,8 @@ main h2 {
     margin-bottom: 1em;
 }
 
-.objectifs div i{
-    margin-right: 10px; 
+.objectifs div i {
+    margin-right: 10px;
 }
 
 .contact h2 {
@@ -299,7 +358,7 @@ main h2 {
 }
 
 .contact div i {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .contact a:hover {

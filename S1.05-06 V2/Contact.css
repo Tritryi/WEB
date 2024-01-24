@@ -1,3 +1,10 @@
+/* Responsive Design */
+@media only screen and (max-width: 450px) {
+  .ht {
+    font-size: 25px;
+  }
+}
+
 /* Partie Main */
 .ht {
     text-transform: uppercase;
@@ -5,11 +12,11 @@
     letter-spacing: 0.25em;
 }
 
-main ul>li{
+main ul>li {
     list-style-type: none;
 }
 
-#nano>div{
+#nano>div {
     padding-top: 5em;
     padding-left: 8em;
     display: flex;
@@ -17,7 +24,7 @@ main ul>li{
     text-align: center;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -26,21 +33,21 @@ main ul>li{
     padding-top: 2em;
 }
 
-.reseau{
+.reseau {
     width: 5em;
 }
 
-.tm{
+.tm {
     text-align: center;
 }
 
-#réseau{
+#réseau {
     background-color: #cacaca;
     padding: 0.5em;
     margin: 1em;
 }
 
-form{
+form {
     background-color: #a3a3a3;
     padding: 1em 1em 1em 1em;
     display: flex;
@@ -48,25 +55,25 @@ form{
     gap: 1em;
 }
 
-label[for="rens"]{
+label[for="rens"] {
     vertical-align: top;
 }
 
-textarea{
+textarea {
     vertical-align: top;
 }
 
-#nano{
+#nano {
     display: flex;
     gap: 400px;
 }
 
-#nano>img{
+#nano>img {
     padding-top: 1em;
     width: 800px;
 }
 
-.form{
+.form {
     display: flex;
     gap: 100px;
 }

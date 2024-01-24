@@ -1,3 +1,18 @@
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+      #pres,
+      #prdt {
+        flex-wrap: wrap;
+      }
+}
+
+@media only screen and (max-width: 650px) {
+    #pres img,
+    #prdt img {
+      width: 400px;
+    }
+}
+
 /* Partie Main */
 main section {
     padding-bottom: 1em;

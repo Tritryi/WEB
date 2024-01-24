@@ -20,5 +20,3 @@ var icon = document.getElementById("icon");
             divShow.style.display = 'block';
         }
     }
-
-    $('.slide').hislide();
