@@ -69,13 +69,17 @@ article {
   margin-bottom: 20px;
 }
 
+main section{
+  font-size: 20px;
+}
+
 p {
   padding-bottom: 2em;
 }
 
 #client {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 1em 1em 1em 1em;
+  background-color: #9ad0c2;
 }
 
 .invest {
@@ -108,4 +112,7 @@ p {
 #client,
 #invf {
   font-size: 17px;
+}
+.ct{
+  margin-left: 1em;
 }

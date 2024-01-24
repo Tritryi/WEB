@@ -35,6 +35,12 @@ main h2 {
   text-align: center;
   padding-bottom: 1em;
 }
+#tstage{
+  font-size: 20px;
+}
+#pres p{
+  line-height: 1em;
+}
 
 #pres {
   display: flex;

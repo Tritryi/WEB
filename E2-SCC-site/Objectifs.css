@@ -13,8 +13,8 @@
 }
 
 /* Partie Main */
-.ti {
-    padding-bottom: 1em;
+.ti{
+    margin-top: 1em;
 }
 
 main li {
@@ -32,11 +32,11 @@ main li {
     margin-bottom: 3em;
     border: solid 3px black;
 }
-
-
-main section {
-    margin-bottom: 1em;
+#nosmissions{
+    background-color: #265073;
+    padding: 1em 1em 1em 1em;
 }
+
 
 main section div:nth-child(2) {
     display: flex;
